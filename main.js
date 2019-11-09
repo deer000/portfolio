@@ -24,7 +24,7 @@ const closeModel2 = () => {
 close.addEventListener("click", closeModel1);
 close2.addEventListener("click", closeModel2);
 
-const plPage2 = document.querySelector(".Portfolio");
+const plPage2 = document.querySelector(".grid_Modal_2");
 const modal2 = () => {
   plPage2.style.left = "0";
 };
