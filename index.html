@@ -1,27 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Merienda+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap"
+      rel="stylesheet"
+    />
     <title>portfolio</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="wrapper">
-        <div class="Home">
-            <div class="grid_box">
-                <div class="grid_item"></div>
-                <div class="grid_item"></div>
-                <div class="grid_item"></div>
-                <div class="grid_item"></div>
-                <div class="grid_item"></div>
-                <div class="grid_item"></div>
-                <div class="grid_item"></div>
-                <div class="grid_item"></div>
+      <div class="Home">
+        <div class="grid_box">
+          <div class="grid_item">
+            <div class="img_over">
+              <a href="#" class="PL_1" onclick="modal1()">프로필</a>
+            </div>
+          </div>
+          <div class="grid_item">
+            <div class="img_over"><a href="#">사회경험 및 특별경험</a></div>
+          </div>
+          <div class="grid_item">
+            <div class="img_over"><a href="#">미래비젼 및 포부</a></div>
+          </div>
+          <div class="grid_item">
+            <div class="img_over"><a href="#">도구 및 편집기</a></div>
+          </div>
+          <div class="grid_item">
+            <div class="img_over">
+              <a href="#">엔진 및 <br />힘의 원동력</a>
+            </div>
+          </div>
+          <div class="grid_item">
+            <div class="img_over"><a href="#">능력치</a></div>
+          </div>
+          <div class="grid_item">
+            <div class="img_over">
+              <a href="#" onclick="modal2()">포트폴리오</a>
+            </div>
+          </div>
+          <div class="grid_item">
+            <div class="img_over"><a href="#">스터디</a></div>
+          </div>
         </div>
         <div class="btn">
+          <button>Click</button>
+          <div class="menu">
+            <h1>Menu</h1>
+            <a href="#" class="PL_1" onclick="modal1()">Profile</a>
+            <a href="#">Social experience and special experience</a>
+            <a href="#">vision and career Goal</a>
+            <a href="#">Tool and Translator</a>
+            <a href="#">Engine end the driving force of power</a>
+            <a href="#">Skill</a>
+            <a href="#" onclick="modal2()">Portfolio</a>
+            <a href="#">Study</a>
+          </div>
         </div>
+      </div>
+      <div class="grid_Modal_1 grid_Modal_0">
+        <div class="drop_shadow">
+          <button class="close close1">X</button>
+          <div class="blur"></div>
+          <div class="grid_Profile">
+            <div class="grid_PL_1"><img src="img/img_11.jpg" alt="" /></div>
+            <div class="grid_PL_2">
+              <h1>김주현<br />(JooHyeon Kim)</h1>
+              <p>1990.04.26(Year.Month.Day)</p>
+              <p>camel000k@gmail.com</p>
+            </div>
+            <div class="grid_PL_3">
+              <div class="grid_grap">
+                <p>HTML 95%</p>
+                <div class="grap_gauge">
+                  <div class="grap_gauge_1"></div>
+                </div>
+              </div>
+              <div class="grid_grap">
+                <p>CSS 80%</p>
+                <div class="grap_gauge">
+                  <div class="grap_gauge_1"></div>
+                </div>
+              </div>
+              <div class="grid_grap">
+                <p>JAVASCRIPT 50%</p>
+                <div class="grap_gauge">
+                  <div class="grap_gauge_1"></div>
+                </div>
+              </div>
+              <div class="grid_grap">
+                <p>SCSS 70%</p>
+                <div class="grap_gauge">
+                  <div class="grap_gauge_1"></div>
+                </div>
+              </div>
+              <div class="grid_grap">
+                <p>PHOTOSHOP 99.8%</p>
+                <div class="grap_gauge">
+                  <div class="grap_gauge_1"></div>
+                </div>
+              </div>
+              <div class="grid_grap">
+                <p>ILLUSTATOR 50%</p>
+                <div class="grap_gauge">
+                  <div class="grap_gauge_1"></div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="Portfolio grid_Modal_0">
+        <div class="drop_shadow">
+          <button class="close close2">X</button>
+          <div class="blur"></div>
+        </div>
+      </div>
     </div>
     <script src="main.js"></script>
-</body>
+  </body>
 </html>

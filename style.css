@@ -1,85 +1,343 @@
 @import url(reset.css);
 .wrapper {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .Home {
-    width: 100%;
-    height: 100vh;
-    background: url("img/img_111.jpg");
-    background-size: cover;
+  width: 100%;
+  height: 100vh;
+  background: url("img/img_111.jpg");
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
 }
 
 .grid_box {
-    width: 100%;
-    height: 90vh;
-    display: grid;
-    grid-template-columns: repeat(15, 1fr);
-    grid-auto-rows: 44px;
-    padding: 10px 50px 0;
-    grid-column-gap: 20px;
-    grid-row-gap: 10px;
+  width: 100%;
+  height: 90vh;
+  display: grid;
+  grid-template-columns: repeat(15, 1fr);
+  grid-auto-rows: 44px;
+  padding: 10px 50px 0;
+  grid-column-gap: 20px;
+  grid-row-gap: 10px;
 }
 
 .btn {
-    width: 100%;
-    height: 10vh;
+  width: 100%;
+  height: 10vh;
 }
 
 .grid_item {
-    box-shadow: 0 0 16px rgba(0, 0, 0, 0.7), 0 0 20px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.7), 0 0 20px rgba(0, 0, 0, 0.4);
+  position: relative;
+  overflow: hidden;
 }
 
 .grid_item:first-child {
-    grid-column: 4/7;
-    grid-row:1/6;
-    background: url("img/img_5.jpg");
-    background-size: cover;
-    background-position: center center;
+  grid-column: 4/7;
+  grid-row: 1/6;
+  background: url("img/img_5.jpg");
+  background-size: cover;
+  background-position: center center;
 }
 .grid_item:nth-child(2) {
-    grid-column: 1/4;
-    grid-row:6/11;
-    background: #034;
+  grid-column: 1/4;
+  grid-row: 6/11;
+  background: #034;
 }
 
 .grid_item:nth-child(3) {
-    grid-column: 4/7;
-    grid-row: 11/16;
-    background: url("img/img_4.jpg");
-    background-size: cover;
-    background-position: center center;
+  grid-column: 4/7;
+  grid-row: 11/16;
+  background: url("img/img_4.jpg");
+  background-size: cover;
+  background-position: center center;
 }
 .grid_item:nth-child(4) {
-    grid-column: 7/9;
-    grid-row: 7/11;
-    background: url("img/img_6.jpg");
-    background-size: cover;
-    background-position: center center;
+  grid-column: 7/9;
+  grid-row: 7/11;
+  background: url("img/img_10.jpg");
+  background-size: cover;
+  background-position: center center;
 }
 .grid_item:nth-child(5) {
-    grid-column: 7/9;
-    grid-row: 12/16;
-    background: red;
+  grid-column: 7/9;
+  grid-row: 12/16;
+  background: url("img/img_6.jpg");
+  background-size: cover;
+  background-position: center center;
 }
 .grid_item:nth-child(6) {
-    grid-column: 9/12;
-    grid-row: 1/8;
-    background: url("img/img_3.jpg");
-    background-size: cover;
-    background-position: center center;
+  grid-column: 9/12;
+  grid-row: 1/8;
+  background: url("img/img_3.jpg");
+  background-size: cover;
+  background-position: center center;
 }
 .grid_item:nth-child(7) {
-    grid-column: 12/15;
-    grid-row: 1/8;
-    background: orchid;
+  grid-column: 12/15;
+  grid-row: 1/8;
+  background: orchid;
 }
 .grid_item:nth-child(8) {
-    grid-column: 12/15;
-    grid-row: 8/16;
-    background: url("img/img_8.jpg");
-    background-size: cover;
-    background-position: center center;
-    
+  grid-column: 12/15;
+  grid-row: 8/16;
+  background: url("img/img_8.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+.img_over {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("img/모기망.png") repeat;
+  transition: 0.5s;
+  opacity: 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img_over a {
+  color: #fff;
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  text-shadow: 0 0 16px #fff;
+}
+
+.grid_item:hover .img_over {
+  opacity: 1;
+}
+
+.btn {
+  bottom: -92vh;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: url("img/모기망.png") repeat;
+  background: rgba(0, 0, 0, 0.9);
+  transition: 0.5s;
+  position: absolute;
+}
+.btn button {
+  width: 100%;
+  height: 8vh;
+  text-align: center;
+  text-shadow: 0 0 16px #fff, 0 0 20px #fff;
+  font-family: "Merienda One", cursive;
+  font-size: 25px;
+  background: none;
+  outline: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.open {
+  bottom: 0;
+}
+
+.menu {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu h1 {
+  color: #f5f5dc;
+  font-size: 5rem;
+  font-weight: 500;
+  text-shadow: 0 0 5px #f5f5dc;
+}
+.menu a {
+  padding: 30px 0 0 0;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.menu a:hover {
+  text-shadow: 0 0 16px #fff, 0 0 20px #fff;
+}
+
+.grid_Modal_0 {
+  width: 100%;
+  height: 100vh;
+  background: url("/img/img_333.jpg") repeat;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.blur {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: url("/img/img_333.jpg") repeat;
+  background-size: cover;
+  background-position: center;
+  -webkit-clip-path: inset(10em);
+  clip-path: inset(10em);
+  -webkit-filter: blur(20px);
+  filter: blur(20px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.drop_shadow {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  -webkit-filter: drop-shadow(0px 20px 10px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(0px 20px 10px rgba(0, 0, 0, 0.3));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.drop_shadow:before {
+  width: 100%;
+  height: 100%;
+  display: block;
+  content: "";
+  position: absolute;
+  top: 10em;
+  height: calc(100% - 20em);
+  width: calc(100% - 20em);
+  border-top: 2px solid rgba(225, 225, 225, 0.2);
+  border-left: 1px solid rgba(225, 225, 225, 0.1);
+  border-right: 1px solid rgba(225, 225, 225, 0.3);
+  z-index: 2;
+}
+
+.grid_Profile {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 10em;
+  height: calc(100% - 20em);
+  width: calc(100% - 20em);
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-auto-rows: 72px;
+  grid-column-gap: 20px;
+  padding: 5px;
+  grid-row-gap: 10px;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.7), 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.grid_PL_1 {
+  grid-column: 1/2;
+  grid-row: 1/8;
+}
+
+.grid_PL_1 img {
+  width: 100%;
+  height: 100%;
+}
+
+.grid_PL_2 {
+  grid-column: 2/3;
+  grid-row: 1/4;
+  font-family: "Merienda One", "Nanum Gothic", sans-serif, cursive;
+  font-size: 25px;
+  letter-spacing: 5px;
+  padding: 15px 0 0;
+}
+
+.grid_PL_2 h1 {
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.grid_PL_2 h1,
+p {
+  margin: 20px;
+}
+
+.grid_PL_3 {
+  grid-column: 2/3;
+  grid-row: 4/8;
+}
+
+.grid_grap {
+  width: 50%;
+  height: 33%;
+  float: left;
+}
+
+.grid_grap p {
+  font-size: 24px;
+  font-family: "Merienda One", cursive;
+}
+.grap_gauge {
+  width: 80%;
+  height: 5px;
+  background: #e5e5dc;
+  border-radius: 50px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.6) inset;
+}
+
+.grap_gauge_1 {
+  height: 100%;
+}
+
+.grid_grap:nth-child(1) .grap_gauge_1 {
+  width: 95%;
+  background: #f0652a;
+}
+
+.grid_grap:nth-child(2) .grap_gauge_1 {
+  width: 80%;
+  background: #32a9dc;
+}
+
+.grid_grap:nth-child(3) .grap_gauge_1 {
+  width: 50%;
+  background: #f0db50;
+}
+
+.grid_grap:nth-child(4) .grap_gauge_1 {
+  width: 70%;
+  background: #ce679b;
+}
+
+.grid_grap:nth-child(5) .grap_gauge_1 {
+  width: 99.8%;
+  background: #0669ad;
+}
+
+.grid_grap:nth-child(6) .grap_gauge_1 {
+  width: 50%;
+  background: #f74716;
+}
+
+.close {
+  color: #fff;
+  font-size: 40px;
+  position: absolute;
+  right: 80px;
+  top: 80px;
+  background: none;
+  border: none;
+  outline: none;
+  font-weight: 900;
+  cursor: pointer;
+  padding: 20px;
 }
