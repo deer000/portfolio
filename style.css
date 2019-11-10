@@ -194,6 +194,10 @@
   background: url("/img/img_555.jpg") repeat;
 }
 
+.grid_Modal_a_3 {
+  background: url("/img/img_111.jpg") repeat;
+}
+
 .blur {
   position: absolute;
   top: 0;
@@ -221,6 +225,10 @@
 
 .blur_b_2 {
   background: url("/img/img_555.jpg") repeat;
+}
+
+.blur_b_3 {
+  background: url("/img/img_111.jpg") repeat;
 }
 
 .drop_shadow {
