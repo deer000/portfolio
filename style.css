@@ -170,10 +170,9 @@
   text-shadow: 0 0 16px #fff, 0 0 20px #fff;
 }
 
-.grid_Modal_0 {
+.grid_Modal_a {
   width: 100%;
   height: 100vh;
-  background: url("/img/img_333.jpg") repeat;
   position: absolute;
   top: 0;
   left: -100%;
@@ -183,13 +182,24 @@
   transition: 0.5s;
 }
 
+.grid_Modal_a_0 {
+  background: url("/img/img_333.jpg") repeat;
+}
+
+.grid_Modal_a_1 {
+  background: url("/img/img_444.jpg") repeat;
+}
+
+.grid_Modal_a_2 {
+  background: url("/img/img_555.jpg") repeat;
+}
+
 .blur {
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
-  background: url("/img/img_333.jpg") repeat;
   background-size: cover;
   background-position: center;
   -webkit-clip-path: inset(10em);
@@ -199,6 +209,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.blur_b_0 {
+  background: url("/img/img_333.jpg") repeat;
+}
+
+.blur_b_1 {
+  background: url("/img/img_444.jpg") repeat;
+}
+
+.blur_b_2 {
+  background: url("/img/img_555.jpg") repeat;
 }
 
 .drop_shadow {
@@ -235,7 +257,7 @@
   width: calc(100% - 20em);
   display: grid;
   grid-template-columns: 1fr 2fr;
-  grid-auto-rows: 72px;
+  grid-auto-rows: 66px;
   grid-column-gap: 20px;
   padding: 5px;
   grid-row-gap: 10px;
