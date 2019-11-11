@@ -198,6 +198,22 @@
   background: url("/img/img_111.jpg") repeat;
 }
 
+.grid_Modal_a_4 {
+  background: url("/img/img_666.jpg") repeat;
+}
+
+.grid_Modal_a_5 {
+  background: url("/img/img_777.jpg") repeat;
+}
+
+.grid_Modal_a_6 {
+  background: url("/img/img_222.jpg") repeat;
+}
+
+.grid_Modal_a_7 {
+  background: url("/img/img_888.jpg") repeat;
+}
+
 .blur {
   position: absolute;
   top: 0;
@@ -229,6 +245,22 @@
 
 .blur_b_3 {
   background: url("/img/img_111.jpg") repeat;
+}
+
+.blur_b_4 {
+  background: url("/img/img_666.jpg") repeat;
+}
+
+.blur_b_5 {
+  background: url("/img/img_777.jpg") repeat;
+}
+
+.blur_b_6 {
+  background: url("/img/img_222.jpg") repeat;
+}
+
+.blur_b_7 {
+  background: url("/img/img_888.jpg") repeat;
 }
 
 .drop_shadow {
