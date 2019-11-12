@@ -302,9 +302,9 @@
   width: calc(100% - 20em);
   display: grid;
   grid-template-columns: 1fr 2fr;
-  grid-auto-rows: 66px;
+  grid-auto-rows: 72px;
   grid-column-gap: 20px;
-  padding: 20px;
+  padding: 5px;
   grid-row-gap: 10px;
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.7);
 }
