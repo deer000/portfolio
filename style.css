@@ -1,4 +1,5 @@
 @import url(reset.css);
+
 .wrapper {
   width: 100%;
   height: auto;
@@ -42,6 +43,7 @@
   background-size: cover;
   background-position: center center;
 }
+
 .grid_item:nth-child(2) {
   grid-column: 1/4;
   grid-row: 6/11;
@@ -55,6 +57,7 @@
   background-size: cover;
   background-position: center center;
 }
+
 .grid_item:nth-child(4) {
   grid-column: 7/9;
   grid-row: 7/11;
@@ -62,6 +65,7 @@
   background-size: cover;
   background-position: center center;
 }
+
 .grid_item:nth-child(5) {
   grid-column: 7/9;
   grid-row: 12/16;
@@ -69,6 +73,7 @@
   background-size: cover;
   background-position: center center;
 }
+
 .grid_item:nth-child(6) {
   grid-column: 9/12;
   grid-row: 1/8;
@@ -76,11 +81,13 @@
   background-size: cover;
   background-position: center center;
 }
+
 .grid_item:nth-child(7) {
   grid-column: 12/15;
   grid-row: 1/8;
   background: orchid;
 }
+
 .grid_item:nth-child(8) {
   grid-column: 12/15;
   grid-row: 8/16;
@@ -131,6 +138,7 @@
   transition: 0.5s;
   position: absolute;
 }
+
 .btn button {
   width: 100%;
   height: 8vh;
@@ -164,6 +172,7 @@
   font-weight: 500;
   text-shadow: 0 0 5px #f5f5dc;
 }
+
 .menu a {
   padding: 30px 0 0 0;
   color: #fff;
@@ -224,7 +233,7 @@
   top: 0;
   left: 0;
   height: 100%;
-  width: 100%;
+  width: auto;
   background-size: cover;
   background-position: center;
   -webkit-clip-path: inset(10em);
@@ -270,7 +279,7 @@
 
 .drop_shadow {
   width: 100%;
-  height: 100%;
+  min-height: 950px;
   position: relative;
   -webkit-filter: drop-shadow(0px 20px 10px rgba(0, 0, 0, 0.3));
   filter: drop-shadow(0px 20px 10px rgba(0, 0, 0, 0.3));
@@ -278,6 +287,7 @@
   justify-content: center;
   align-items: center;
 }
+
 .drop_shadow:before {
   width: 100%;
   height: 100%;
@@ -295,7 +305,7 @@
 
 .grid_Profile {
   width: 100%;
-  height: 100%;
+  height: auto;
   position: absolute;
   top: 10em;
   height: calc(100% - 20em);
@@ -304,7 +314,7 @@
   grid-template-columns: 1fr 2fr;
   grid-auto-rows: 72px;
   grid-column-gap: 20px;
-  padding: 13px;
+  padding: 40px;
   grid-row-gap: 10px;
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.7);
 }
@@ -355,6 +365,7 @@ p {
   font-size: 24px;
   font-family: "Merienda One", cursive;
 }
+
 .grap_gauge {
   width: 80%;
   height: 5px;
