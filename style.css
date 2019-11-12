@@ -304,7 +304,7 @@
   grid-template-columns: 1fr 2fr;
   grid-auto-rows: 72px;
   grid-column-gap: 20px;
-  padding: 18px 0 0 18px;
+  padding: 20px 0 0 18px;
   grid-row-gap: 10px;
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.7);
 }
@@ -315,8 +315,8 @@
 }
 
 .grid_PL_1 img {
-  width: 75%;
-  height: 95%;
+  width: 78%;
+  height: 98%;
 }
 
 .grid_PL_2 {
