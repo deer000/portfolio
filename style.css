@@ -39,9 +39,9 @@
 .grid_item:first-child {
   grid-column: 4/7;
   grid-row: 3/9;
-  background: url("img/img_5.jpg");
+  background: url("img/img_5_1.jpg");
   background-size: cover;
-  background-position: center center;
+  background-position: top;
 }
 
 .grid_item:nth-child(2) {
