@@ -38,29 +38,29 @@
 
 .grid_item:first-child {
   grid-column: 4/7;
-  grid-row: 1/6;
+  grid-row: 1/7;
   background: url("img/img_5.jpg");
   background-size: cover;
   background-position: center center;
 }
 
 .grid_item:nth-child(2) {
-  grid-column: 1/4;
-  grid-row: 6/11;
+  grid-column: 8/13;
+  grid-row: 1/7;
   background: #034;
 }
 
 .grid_item:nth-child(3) {
   grid-column: 4/7;
-  grid-row: 11/16;
+  grid-row: 9/15;
   background: url("img/img_4.jpg");
   background-size: cover;
   background-position: center center;
 }
 
 .grid_item:nth-child(4) {
-  grid-column: 7/9;
-  grid-row: 7/11;
+  grid-column: 1/4;
+  grid-row: 3/8;
   background: url("img/img_10.jpg");
   background-size: cover;
   background-position: center center;
@@ -75,8 +75,8 @@
 }
 
 .grid_item:nth-child(6) {
-  grid-column: 10/13;
-  grid-row: 1/8;
+  grid-column: 7/10;
+  grid-row: 7/12;
   background: url("img/img_3.jpg");
   background-size: cover;
   background-position: center center;
@@ -91,11 +91,11 @@
 }
 
 .grid_item:nth-child(8) {
-  grid-column: 13/16;
+  grid-column: 10/14;
   grid-row: 8/16;
   background: url("img/img_8.jpg");
   background-size: cover;
-  background-position: center center;
+  background-position: top center;
 }
 
 .img_over {
