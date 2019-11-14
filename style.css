@@ -75,7 +75,7 @@
 }
 
 .grid_item:nth-child(6) {
-  grid-column: 9/12;
+  grid-column: 10/13;
   grid-row: 1/8;
   background: url("img/img_3.jpg");
   background-size: cover;
@@ -83,7 +83,7 @@
 }
 
 .grid_item:nth-child(7) {
-  grid-column: 12/15;
+  grid-column: 13/16;
   grid-row: 1/8;
   background: url("img/kakao.png");
   background-size: cover;
@@ -91,7 +91,7 @@
 }
 
 .grid_item:nth-child(8) {
-  grid-column: 12/15;
+  grid-column: 13/16;
   grid-row: 8/16;
   background: url("img/img_8.jpg");
   background-size: cover;
@@ -461,7 +461,7 @@ p {
   grid-template-columns: repeat(12fr);
   grid-auto-rows: 120px;
   grid-column-gap: 20px;
-  padding: 40px;
+  padding: 30px;
   grid-row-gap: 10px;
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.7);
 }
@@ -556,4 +556,18 @@ p {
   grid-column: 3/3;
   grid-row: 4/4;
   background: slateblue;
+}
+
+.grid_Pf a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Merienda One", cursive;
+  font-size: 25px;
+  font-weight: 600;
+  color: #e5e5dc;
+  cursor: pointer;
 }
