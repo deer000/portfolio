@@ -6,7 +6,7 @@
 }
 
 .Home {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background: url("img/img_111.jpg");
   background-size: cover;
@@ -15,8 +15,8 @@
 }
 
 .grid_box {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 90vh;
   display: grid;
   grid-template-columns: repeat(15, 1fr);
   grid-auto-rows: 44px;
