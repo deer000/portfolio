@@ -462,8 +462,8 @@ p {
   grid-template-columns: repeat(12fr);
   grid-auto-rows: 120px;
   grid-column-gap: 20px;
-  padding: 30px;
-  grid-row-gap: 10px;
+  padding: 40px;
+  grid-row-gap: 20px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
   z-index: 999;
 }
