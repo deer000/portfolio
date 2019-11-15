@@ -468,6 +468,12 @@ p {
   z-index: 999;
 }
 
+.grid_item_1 {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7), 0 0 20px rgba(0, 0, 0, 0.4);
+  position: relative;
+  overflow: hidden;
+}
+
 .grid_item_1:first-child {
   width: 100%;
   height: 100%;
@@ -563,10 +569,14 @@ p {
 }
 
 .img_over_1 {
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  background: url("img/MosquitoNet.png") repeat;
+  transition: 0.5s;
+  opacity: 0;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -576,12 +586,16 @@ p {
 .img_over_1 a {
   width: 100%;
   height: 100%;
-  font-family: "Merienda One", cursive;
-  font-size: 25px;
-  font-weight: 600;
-  color: #e5e5dc;
-  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #fff;
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  text-shadow: 0 0 16px #fff;
+}
+
+.grid_item_1:hover .img_over_1 {
+  opacity: 1;
 }
