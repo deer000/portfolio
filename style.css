@@ -629,7 +629,6 @@ p {
 .grid_Tool {
   width: 100%;
   height: auto;
-  position: absolute;
   top: 10em;
   height: calc(100% - 20em);
   width: calc(100% - 20em);
@@ -644,8 +643,6 @@ p {
 }
 
 .grid_item_2 {
-  text-align: center;
-  display: inline-block;
   width: 100px;
   height: 100px;
   border-radius: 30px 30px;
@@ -655,7 +652,12 @@ p {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.2);
 }
 
-.grid_item_2 img {
+.grid_item_2 i {
+  float: left;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
   width: 100px;
   height: 100px;
 }
