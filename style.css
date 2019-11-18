@@ -629,17 +629,19 @@ p {
 .grid_Tool {
   width: 100%;
   height: auto;
+  position: absolute;
   top: 10em;
   height: calc(100% - 20em);
   width: calc(100% - 20em);
   display: grid;
-  grid-template-columns: repeat(12fr);
-  grid-auto-rows: 120px;
+  grid-template-columns: repeat(10, 100px);
+  grid-auto-rows: 100px 100px;
   grid-column-gap: 20px;
-  padding: 40px;
-  grid-row-gap: 20px;
+  padding: 100px 40px;
+  grid-row-gap: 60px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
   z-index: 999;
+  justify-content: center;
 }
 
 .grid_item_2 {
@@ -650,14 +652,15 @@ p {
   background-repeat: no-repeat;
   margin-right: 2rem;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.2);
+  padding: 15px;
 }
 
-.grid_item_2 i {
-  float: left;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  align-items: center;
-  width: 100px;
-  height: 100px;
+.grid_item_2 img {
+  width: 100%;
+  height: 100%;
+}
+
+.text {
+  grid-column: 1/13;
+  grid-row: 2/3;
 }
