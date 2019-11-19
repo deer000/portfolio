@@ -620,47 +620,76 @@ p {
   top: 10em;
   height: calc(100% - 20em);
   width: calc(100% - 20em);
-  border-top: 2px solid rgba(225, 225, 225, 0.2);
+  border-top: 2px solid rgba(133, 44, 44, 0.2);
   border-left: 1px solid rgba(225, 225, 225, 0.1);
   border-right: 1px solid rgba(225, 225, 225, 0.3);
   z-index: 2;
 }
 
 .grid_Tool {
-  width: 100%;
-  height: auto;
+  width: 100vw;
+  height: 100vh;
   position: absolute;
   top: 10em;
   height: calc(100% - 20em);
   width: calc(100% - 20em);
-  display: grid;
-  grid-template-columns: repeat(10, 100px);
-  grid-auto-rows: 100px 100px;
-  grid-column-gap: 20px;
-  padding: 100px 40px;
-  grid-row-gap: 60px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
   z-index: 999;
-  justify-content: center;
 }
 
-.grid_item_2 {
+.grid_Tool_box {
+  width: 100%;
+  height: 20%;
+  font-size: 24px;
+  font-family: "Merienda One", cursive;
+  text-align: center;
+  text-shadow: 0 0 16px #fff;
+  color: #fff;
+  margin-top: 30px;
+}
+
+.grid_Tool_box_1 {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid_Tool_box_1 div {
   width: 100px;
   height: 100px;
   border-radius: 30px 30px;
-  background-size: cover;
+  background: cover;
   background-repeat: no-repeat;
-  margin-right: 2rem;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.2);
-  padding: 15px;
+  margin: 10px;
+  padding: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
 }
-
-.grid_item_2 img {
+.grid_Tool_box_1 div img {
   width: 100%;
   height: 100%;
 }
+.grid_Tool_box_2 {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-.text {
-  grid-column: 1/13;
-  grid-row: 2/3;
+.grid_Tool_box_2 div {
+  width: 100px;
+  height: 100px;
+  border-radius: 30px 30px;
+  background: cover;
+  background-repeat: no-repeat;
+  margin: 10px;
+  padding: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.grid_Tool_box_2 div img {
+  width: 100%;
+  height: 100%;
 }
