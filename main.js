@@ -1,3 +1,5 @@
+// 선택자
+
 const btn = document.querySelector(".btn");
 const openbtn = document.querySelector(".btn>button");
 const SHOWING_CLASS = "showing";
@@ -5,15 +7,7 @@ const firstSlide = document.querySelector(".slide-item:first-child");
 const lastSlide = document.querySelector(".slide-item:last-child");
 const nextBtn = document.querySelector(".next");
 const prevBtn = document.querySelector(".prev");
-
-const opennav = () => {
-  btn.classList.toggle("open");
-};
-const slideNum = document.querySelector(".slide_number");
-const slideItems = document.getElementsByClassName("slide-item");
-
-openbtn.addEventListener("click", opennav);
-let count = 1;
+const modals = document.querySelectorAll(".modals");
 
 const plPage = document.querySelector(".grid_Modal_1");
 const plPage2 = document.querySelector(".grid_Modal_2");
@@ -31,6 +25,20 @@ const close5 = document.querySelector(".close5");
 const close6 = document.querySelector(".close6");
 const close7 = document.querySelector(".close7");
 const close8 = document.querySelector(".close8");
+
+
+// 함수
+
+const opennav = () => {
+  btn.classList.toggle("open");
+};
+const slideNum = document.querySelector(".slide_number");
+const slideItems = document.getElementsByClassName("slide-item");
+
+openbtn.addEventListener("click", opennav);
+let count = 1;
+
+
 
 const modal1 = () => {
   plPage.style.left = "0";
@@ -61,14 +69,7 @@ const closeModal8 = () => {
   plPage8.style.left = "-100%";
 };
 
-close.addEventListener("click", closeModel1);
-close2.addEventListener("click", closeModel2);
-close3.addEventListener("click", closeModal3);
-close4.addEventListener("click", closeModal4);
-close5.addEventListener("click", closeModal5);
-close6.addEventListener("click", closeModal6);
-close7.addEventListener("click", closeModal7);
-close8.addEventListener("click", closeModal8);
+
 
 const modal2 = () => {
   plPage2.style.left = "0";
@@ -98,40 +99,27 @@ const modal8 = () => {
   plPage8.style.left = "0";
 };
 
-const nextSlides = () => {
-  const currentSlide = document.querySelector(`.${SHOWING_CLASS}`);
-  if (currentSlide) {
-    currentSlide.classList.remove(SHOWING_CLASS);
-    const nextSlide = currentSlide.nextElementSibling;
-    if (nextSlide) {
-      nextSlide.classList.add(SHOWING_CLASS);
-      count++;
-    } else {
-      firstSlide.classList.add(SHOWING_CLASS);
-      count = 1;
-    }
-  } else {
-    firstSlide.classList.add(SHOWING_CLASS);
-    count = 1;
-  }
-  slideNum.innerHTML = `${count}/${slideItems.length}`;
-};
 
-const prevSlides = () => {
-  const currentSlide = document.querySelector(`.${SHOWING_CLASS}`);
-  if (currentSlide) {
-    currentSlide.classList.remove(SHOWING_CLASS);
-    const prevSlide = currentSlide.previousElementSibling;
-    if (prevSlide) {
-      prevSlide.classList.add(SHOWING_CLASS);
-      count--;
-    } else {
-      lastSlide.classList.add(SHOWING_CLASS);
-      count = 5;
-    }
-  } else {
-    lastSlide.classList.add(SHOWING_CLASS);
-    count = 5;
-  }
-  slideNum.innerHTML = `${count}/${slideItems.length}`;
-};
+function modal(n) {
+  modals[n].style.display = "block";
+}
+
+// arrow Function은 this가 작동하지 않는다 .
+
+
+
+// 실행
+
+close.addEventListener("click", closeModel1);
+close2.addEventListener("click", closeModel2);
+close3.addEventListener("click", closeModal3);
+close4.addEventListener("click", closeModal4);
+close5.addEventListener("click", closeModal5);
+close6.addEventListener("click", closeModal6);
+close7.addEventListener("click", closeModal7);
+close8.addEventListener("click", closeModal8);
+
+
+
+
+//slide
