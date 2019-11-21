@@ -1,11 +1,19 @@
 const btn = document.querySelector(".btn");
 const openbtn = document.querySelector(".btn>button");
+const SHOWING_CLASS = "showing";
+const firstSlide = document.querySelector(".slide-item:first-child");
+const lastSlide = document.querySelector(".slide-item:last-child");
+const nextBtn = document.querySelector(".next");
+const prevBtn = document.querySelector(".prev");
 
 const opennav = () => {
   btn.classList.toggle("open");
 };
+const slideNum = document.querySelector(".slide_number");
+const slideItems = document.getElementsByClassName("slide-item");
 
 openbtn.addEventListener("click", opennav);
+let count = 1;
 
 const plPage = document.querySelector(".grid_Modal_1");
 const plPage2 = document.querySelector(".grid_Modal_2");
@@ -88,4 +96,42 @@ const modal7 = () => {
 
 const modal8 = () => {
   plPage8.style.left = "0";
+};
+
+const nextSlides = () => {
+  const currentSlide = document.querySelector(`.${SHOWING_CLASS}`);
+  if (currentSlide) {
+    currentSlide.classList.remove(SHOWING_CLASS);
+    const nextSlide = currentSlide.nextElementSibling;
+    if (nextSlide) {
+      nextSlide.classList.add(SHOWING_CLASS);
+      count++;
+    } else {
+      firstSlide.classList.add(SHOWING_CLASS);
+      count = 1;
+    }
+  } else {
+    firstSlide.classList.add(SHOWING_CLASS);
+    count = 1;
+  }
+  slideNum.innerHTML = `${count}/${slideItems.length}`;
+};
+
+const prevSlides = () => {
+  const currentSlide = document.querySelector(`.${SHOWING_CLASS}`);
+  if (currentSlide) {
+    currentSlide.classList.remove(SHOWING_CLASS);
+    const prevSlide = currentSlide.previousElementSibling;
+    if (prevSlide) {
+      prevSlide.classList.add(SHOWING_CLASS);
+      count--;
+    } else {
+      lastSlide.classList.add(SHOWING_CLASS);
+      count = 5;
+    }
+  } else {
+    lastSlide.classList.add(SHOWING_CLASS);
+    count = 5;
+  }
+  slideNum.innerHTML = `${count}/${slideItems.length}`;
 };
