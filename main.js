@@ -26,7 +26,6 @@ const close6 = document.querySelector(".close6");
 const close7 = document.querySelector(".close7");
 const close8 = document.querySelector(".close8");
 
-
 // 함수
 
 const opennav = () => {
@@ -37,8 +36,6 @@ const slideItems = document.getElementsByClassName("slide-item");
 
 openbtn.addEventListener("click", opennav);
 let count = 1;
-
-
 
 const modal1 = () => {
   plPage.style.left = "0";
@@ -69,8 +66,6 @@ const closeModal8 = () => {
   plPage8.style.left = "-100%";
 };
 
-
-
 const modal2 = () => {
   plPage2.style.left = "0";
 };
@@ -99,14 +94,11 @@ const modal8 = () => {
   plPage8.style.left = "0";
 };
 
-
 function modal(n) {
   modals[n].style.display = "block";
 }
 
 // arrow Function은 this가 작동하지 않는다 .
-
-
 
 // 실행
 
@@ -118,8 +110,5 @@ close5.addEventListener("click", closeModal5);
 close6.addEventListener("click", closeModal6);
 close7.addEventListener("click", closeModal7);
 close8.addEventListener("click", closeModal8);
-
-
-
 
 //slide
