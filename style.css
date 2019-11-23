@@ -263,7 +263,7 @@
 }
 
 .grid_Modal_a_5 {
-  background: url("img/img_777.jpg") repeat;
+  background: url("img/img_999.jpg") repeat;
 }
 
 .grid_Modal_a_6 {
@@ -1068,5 +1068,5 @@ p {
   justify-content: flex;
   justify-content: center;
   align-items: center;
-  line-height: 150px;
+  line-height: 100px;
 }
